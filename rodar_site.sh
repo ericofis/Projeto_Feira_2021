@@ -1,6 +1,6 @@
 #!/bin/bash
 IFS=$'\n'
-i=1
+
 
 clear
 
@@ -12,6 +12,8 @@ do
     ls *.jpg  -alt > lista-nova
     diff lista lista-nova
     if [ $? -ne 0 ]; then
+    
+        i=1
     
         echo "Nova imagem detectada!";
         
@@ -34,7 +36,7 @@ do
             fi
             i=$((${i}+1))
             
-            if [ $i -eq 10 ]
+            if [ $i -eq 11 ]
             then
               break
             fi
