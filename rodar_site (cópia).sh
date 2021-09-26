@@ -4,13 +4,14 @@ i=1
 
 clear
 
-rm -rf config
 
 while :
 do
 
 #if [ -f *.jpg ] ; then
 if [[ $(ls *.jpg) ]]; then
+
+#cat header > pagina
    
 for var1 in *.jpg ; do
 
@@ -19,6 +20,8 @@ for var1 in *.jpg ; do
     #python prog.py ${var1}
     
     #pdflatex -interaction=nonstopmode -halt-on-error ${var1} 
+    
+    echo "<img src='"${var1}"' alt='imagem' width='500' style='max-width: 100%' >" 
     if [ $? -eq 0 ] 
     then
         echo "****************************************************************"
@@ -30,14 +33,10 @@ for var1 in *.jpg ; do
         echo "****************************************************************"
     fi
     i=$((${i}+1))
-    
-    mv *REMOVE_ME ./velhas
 
-    
-    rm -rf config
 done
 
-
+#cat footer >> pagina
 
 else 
     echo time
