@@ -1,10 +1,7 @@
 #!/bin/bash
 IFS=$'\n'
 
-
 clear
-
-rm -rf config
 
 while :
 do
@@ -18,12 +15,12 @@ do
         echo "Nova imagem detectada!";
         
         cat header > index.html
-        
+         cat ../prog2/inicio > ../prog2/facebook.php
         for var1 in $(ls *.jpg -t ) ; do
         
             echo "<img src='" ${var1} "' alt='imagem' width='500' style='max-width: 100%' >" >> index.html
             echo "<br />" >> index.html
-
+            echo "<img src='" ${var1} >> ../prog2/facebook.php
             if [ $? -eq 0 ] 
             then
                 echo "****************************************************************"
@@ -46,7 +43,7 @@ do
         mv lista-nova lista
         
         cat footer >> index.html
-        
+        cat ../prog2/final >> ../prog2/facebook.php
         git add . ; git commit -m "testenotebook" ; git push
     else 
         echo "Aguardando imagens"
