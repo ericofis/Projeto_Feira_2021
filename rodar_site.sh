@@ -20,7 +20,7 @@ do
         
             echo "<img src='" ${var1} "' alt='imagem' width='500' style='max-width: 100%' >" >> index.html
             echo "<br />" >> index.html
-             if [ $i -eq 11 ]
+             if [ $i -eq 1 ]
             then
               echo "<img src='" ${var1} >> ../prog2/facebook.php
             fi
