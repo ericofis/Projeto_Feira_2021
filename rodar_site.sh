@@ -22,7 +22,7 @@ do
             echo "<br />" >> index.html
              if [ $i -eq 1 ]
             then
-              echo "<img src='" ${var1} >> ../prog2/facebook.php
+              echo "'link' => 'https://ericofis.github.io/Projeto_Feira_2021/"${var1}"," >> ../prog2/facebook.php
             fi
             
             if [ $? -eq 0 ] 
