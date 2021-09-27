@@ -49,6 +49,7 @@ do
         cat footer >> index.html
         cat ../prog2/final >> ../prog2/facebook.php
         git add . ; git commit -m "testenotebook" ; git push
+        ../prog2/php facebook.php
     else 
         echo "Aguardando imagens"
         sleep 3
