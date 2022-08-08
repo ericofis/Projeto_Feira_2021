@@ -48,7 +48,7 @@ do
         
         cat footer >> index.html
         cat ../prog2/final >> ../prog2/facebook.php
-        git add . ; git commit -m "testenotebook" ; git push https://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@github.com/ericofis/Projeto_Feira_2021.git
+        git add . ; git commit -m "testenotebook" ; git push 
         cd ../prog2
         php facebook.php
         cd ../Projeto_Feira_2021
